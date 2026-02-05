@@ -1,0 +1,1317 @@
+@charset "utf-8";
+/* @autor tatsumi @version 20240828 */
+/* 全画面共通 */
+.background {
+	background-color: white;
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 10px 100px 10px;
+    padding: 0px,0px,0px,100px;
+    min-height: 100vh;
+    min-width: 1200px;
+    width: 80%; 
+}
+
+.common-header {
+    background-color: #fffff0;
+    border: solid 2px black;
+    margin: 10px auto 10px;
+    width: 100.75%;
+    max-width: 1500px;
+}
+
+.no-transition-common-header {
+    background-color: #fffff0;
+    border: solid 2px black;
+    margin: 10px auto 10px;
+    width: 100.75%;
+    max-width: 1500px;
+}
+
+.img-logo {
+    height: 74px;
+    width: 430px;
+}
+
+.img-acrobat {
+    height: 16px;;
+    width: 16px;
+}
+
+.main {
+    background-color: #fffff0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 10px auto 10px;
+    padding: 0px 5px;
+    border: solid 2px black;
+    min-height: 75vh;
+    width: 100%;
+    max-width: 1500px;
+}
+
+.footer {
+    height: 8px;
+    width: 100%;
+    text-align: right;
+}
+
+.screen {
+    display: none;
+    position: absolute;
+    left: 0;
+    height: 400px;
+} 
+
+.screen-wordbox {
+    position: absolute;
+    text-align: center;
+    vertical-align: middle;
+    top: 200px;
+    width: 100%;
+    height: 100%;
+    border: solid 2px black;
+}
+
+.screen-wordbox-size {
+    text-align: center;
+    vertical-align: middle;
+    background-color: RGBa(128,128,128,0.80);
+}
+
+.screen-word {
+    font-size: 24pt;
+}
+
+.function-title{
+    text-align: left;
+    font-weight: bold;
+    font-size: 14px;
+    margin-left: 1%;
+    margin-top: 10px;
+}
+
+.input-group-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 10px;
+}
+
+.input-group-col {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    margin-left: 1%;
+}
+
+.input-group-one-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 10px;
+    height: 35px;
+}
+
+.input-group-row-nospase {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 0px;
+}
+
+.top-section {
+    margin-left: 1%;
+    margin-bottom: 10px;
+}
+
+.section {
+    margin-left: 1%;
+    margin-top: 10px;
+}
+
+.section-right {
+    margin-top: 14px;
+    margin-bottom: 15px;
+    text-align: right;
+}
+
+.section-inputbox {
+    margin-top: 10px;
+}
+
+.section-number {
+    margin-left: 4%;
+    margin-top: 10px;
+}
+
+.section-period {
+    margin-left: 2%;
+    margin-top: 10px;
+}
+
+.disclosure-recipient {
+    margin-left: 1%;
+}
+
+.disclosure-recipient-contract-search {
+    margin-left: 4.5%;
+}
+
+.command-button {
+    text-align: right;
+    margin-right: 30%;
+}
+
+.create-button {
+    text-align: right;
+    margin-right: 10%;
+}
+
+.page-position {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 10px;
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.search-list {
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+}
+
+hr {
+    width: 95%;
+    text-align: center;
+}
+
+.css-br::after {
+    content:"\A";
+    white-space: pre;
+}
+
+.tilde {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.section-title-textarea {
+    display: table-cell;
+    vertical-align: top;
+}
+
+.font-red {
+    color: red;
+}
+
+.textbox-one {
+    height: 18.5px;
+    width: 20px;
+    ime-mode: disabled;
+}
+
+.textbox-two {
+    height: 18.5px;
+    width: 30px;
+    ime-mode: disabled;
+}
+
+.textbox-three {
+    height: 18.5px;
+    width: 40px;
+    ime-mode: disabled;
+}
+
+.textbox-four {
+    height: 18.5px;
+    width: 50px;
+    ime-mode: disabled;
+}
+
+.textbox-five {
+    height: 18.5px;
+    width: 60px;
+    ime-mode: disabled;
+}
+
+.textbox-six {
+    height: 18.5px;
+    width: 75px;
+    ime-mode: disabled;
+}
+
+.textbox-seven {
+    height: 18.5px;
+    width: 200px;
+    ime-mode: disabled;
+}
+
+.textbox-eight {
+    height: 18.5px;
+    width: 200px;
+    ime-mode: active;
+}
+
+.textbox-nine {
+    height: 18.5px;
+    width: 275px;
+    ime-mode: active;
+}
+
+.textbox-ten {
+    height: 18.5px;
+    width: 275px;
+    ime-mode: disabled;
+}
+
+.textbox-eleven {
+    height: 18.5px;
+    width: 400px;
+    ime-mode: active;
+}
+
+.textbox-twelve {
+    height: 18.5px;
+    width: 700px;
+    ime-mode: active;
+}
+
+.hide-textbox {
+    height: 18.5px;
+    width: 275px;
+    ime-mode: active;
+    visibility: hidden;
+}
+
+.textarea-one {
+    height: 45px;
+    width: 700px;
+    ime-mode: active;
+    margin-bottom: 10px;
+}
+
+.textarea-two {
+    height: 200px;
+    width: 750px;
+    ime-mode: active;
+    margin-top: 10px;
+}
+
+.pulldown-one {
+    height: 25px;
+    width: 35px;
+}
+
+.pulldown-two {
+    height: 25px;
+    width: 75px;
+}
+
+.pulldown-three {
+    height: 25px;
+    width: 100px;
+}
+
+.pulldown-four {
+    height: 25px;
+    width: 125px;
+}
+
+.pulldown-five {
+    height: 25px;
+    width: 225px;
+}
+
+.pulldown-six {
+    height: 25px;
+    width: 275px;
+    margin-left: 10px;
+}
+
+.pulldown-seven {
+    height: 25px;
+    width: 50px;
+}
+
+.button {
+    height: 25px;
+    margin-left: 10px;
+}
+
+.checkbox {
+    height: 10px;
+}
+
+.radiobutton {
+    height: 10px;
+}
+
+.common-header-size {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 100%;
+}
+
+.common-header-word {
+    color: blue;
+    text-decoration: underline;
+}
+
+.common-header-date {
+    margin-top: 5px;
+    margin-right: 3%;
+    text-align: right;
+    vertical-align: middle;
+}
+
+.common-header-transition {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 100%;
+    height: 100%;
+}
+
+.common-header-section {
+    margin-top: 1px;
+    margin-bottom: 1px;
+    text-align: left;
+    vertical-align: middle;
+}
+
+.search-list-main {
+    border: solid 2px darkgray;
+    border-collapse: collapse;
+    empty-cells: show;
+    width: 100%;
+}
+
+.search-list-detail {
+    width: 60%;
+    margin-left: 2.5%;
+}
+
+.page-position-front {
+    margin-top: 5px;
+    margin-right: 1%;
+    text-align: right;
+    vertical-align: middle;
+}
+
+.page-position-number {
+    margin-left: 1%;
+    margin-right: 1%;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.page-position-next {
+    margin-top: 5px;
+    margin-left: 1%;
+    text-align: left;
+    vertical-align: middle;
+}
+
+table.search-list-main th {
+    background-color: cornflowerblue;
+    border: solid 2px darkgray;
+    font-weight: bold;
+}
+
+table.search-list-main td {
+    border: solid 2px darkgray;
+}
+
+.rows-ivory {
+    background-color: ivory;
+}
+
+.rows-blue {
+    background-color: #dedeff;
+}
+
+.rows-blue-title {
+    background-color: cornflowerblue;
+    text-align: left;
+    vertical-align: middle;
+    font-weight: bold;
+    width: 15%;
+}
+
+.cells-left {
+    text-align: left;
+    width: 12%;
+}
+
+.cells-right {
+    text-align: right;
+    width: 12%;
+}
+
+.cells-width-one {
+    width: 3%;
+}
+
+.cells-width-two {
+    width: 5%;
+}
+
+.cells-width-three {
+    width: 10%;
+}
+
+.cells-width-four {
+    width: 15%;
+}
+
+.cells-width-five {
+    width: 20%;
+}
+
+.cells-width-six {
+    width: 8%;
+}
+
+.cells-width-seven {
+    width: 50%;
+}
+
+.cells-word-position-left {
+    text-align: left;
+    vertical-align: middle;
+}
+
+.cells-word-position-center {
+    text-align: center;
+    vertical-align: middle;
+}
+
+.cells-word-position-right {
+    text-align: right;
+    vertical-align: middle;
+}
+
+.link-button {
+    width: 100%;
+    text-align: center;
+    font-size: 9pt;
+}
+/* 以下変更前に存在したもの */
+/* BODY {
+	FONT-SIZE: 12px; BACKGROUND-COLOR: white
+}
+
+.header {
+	FONT-WEIGHT: bold; FONT-SIZE: 14px
+}
+
+.title {
+	font-size: 20pt;
+}
+
+.left {
+	text-align: left;
+}
+
+.center {
+	text-align: center;
+}
+
+.right {
+	text-align: right;
+}
+
+.top {
+	vertical-align: top;
+}
+
+.middle {
+	vertical-align: middle;
+}
+
+.bottom {
+	vertical-align: bottom;
+}
+
+.font-14 {
+	FONT-SIZE: 14px
+}
+
+form.center {
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.menuButton {
+	WIDTH: 140px
+}
+
+.masterMenuButton {
+	WIDTH: 200px
+}
+
+table.center {
+	margin-right: auto;
+	margin-left: auto;
+}
+
+table.right {
+	margin-right: 0;
+	margin-left: auto;
+}
+
+TABLE.border {
+	WIDTH: 977px; BACKGROUND-COLOR: navy
+}
+
+TABLE.bgborder {
+	BACKGROUND-COLOR: darkgray
+}
+
+TH {
+	BACKGROUND-COLOR: white
+}
+
+.thbackcolor {
+	BACKGROUND-COLOR: cornflowerblue
+}
+
+TABLE TR {
+	BACKGROUND-COLOR: ivory
+}
+
+TR.INVISIBLE{
+	height:0px;
+}
+
+td.center {
+	margin-right: auto;
+	margin-left: auto;
+}
+
+td.right {
+	margin-right: 0;
+	margin-left: auto;
+}
+
+.tdbackcolor {
+	BACKGROUND-COLOR: #dedeff
+}
+
+div.center {
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.font-gray {
+	color: gray;
+}
+
+A:link {
+	color: #0000ff;
+}
+
+A:visited {
+	color: #0000ff;
+}
+
+A:active {
+	color: #0000ff;
+}
+
+A:hover {
+	color: lightseagreen; 
+    text-decoration: underline;
+}
+
+.ime-active {
+	IME-MODE: active
+}
+
+.ime-disabled {
+	IME-MODE: disabled
+}
+
+.ime-inactive {
+	IME-MODE: inactive
+}
+
+.linkbutton {
+	FONT-SIZE: 9pt;
+	WIDTH: 44px;
+	TEXT-ALIGN: center
+	
+}
+
+.linkbutton3 {
+	FONT-SIZE: 9pt;
+	WIDTH: 60px;
+	TEXT-ALIGN: center
+} */
+/* 以上変更前に存在したもの */
+
+/* 以下画面別 */
+/* C001 */
+.company-info {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.company-info-display {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    gap: 7px;
+    margin-top: 14px;
+    margin-left: 1%;
+}
+
+.company-info-input {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex-grow: 20;
+    margin-top: 10px;
+}
+
+.manager-related-display {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex-grow: 2;
+    margin-top: 10px;
+    margin-left: 1%;
+}
+
+.manager-related-input {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex-grow: 18;
+    margin-top: 10px;
+}
+
+.manager-related-section {
+    text-align: right;
+    margin-left: 1%;
+    margin-top: 10px;
+}
+
+.classification-section-one {
+    text-align: right;
+    margin-top: 10px;
+}
+
+.classification-section-two {
+    text-align: right;
+    margin-top: 39px;
+}
+
+.user-disclosure-info-title {
+    text-align: left;
+    background-color: cornflowerblue;
+    border: solid 2px darkgray;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: bold;
+}
+
+.user-disclosure-info-block {
+    border: solid 2px darkgray;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    flex-grow: 1;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+
+.security-related {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: right;
+    vertical-align: middle;
+    margin-top: 4px;
+    margin-bottom: 5px;
+    min-width: 30%;
+    gap: 5px;
+}
+
+.security-related-input {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: left;
+    margin-top: 0px;
+    margin-bottom: 5px;
+    margin-right: 5%;
+    min-width: 15%;
+}
+
+.login-related {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 5px;
+    text-align: right;
+    min-width: 20%;
+    margin-top: 5px;
+}
+
+.login-related-input {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.addable-screen {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-width: 30%;
+    margin-left: 1%;
+}
+
+.csv-leader {
+    flex-grow: 4;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    min-width: 60%;
+}
+
+.csv-leader-input-group {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    min-width: 25%;
+}
+
+/* C002 */
+.gray-textbox {
+    height: 18.5px;
+    width: 200px;
+    ime-mode: disabled;
+    color: gray;
+}
+
+/* K001 */
+.search-contract-row {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 0px;
+}
+
+.contract-amount {
+    margin-top: 45px;
+    margin-bottom: 15px;
+    text-align: right;
+}
+
+/* K003 */
+.interest-rate-table {
+    margin-top: 10px;
+    margin-left: 5%;
+    width: 35%;
+}
+
+/* K004 */
+.contract-detail-search {
+    margin-left: 10%;
+    text-align: left;
+    margin-top: 10px;
+}
+
+.contract-detail-search-title {
+    font-weight: bold;
+    font-size: 14pt;
+}
+
+/* M000 */
+.top-box {
+    margin: auto;
+}
+
+.toppage-section {
+    margin-top: 10px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.section-bold {
+    text-align: center;
+    vertical-align: middle;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* M002 */
+.transition-button-column {
+    background-color:#fffff0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 10px auto 10px;
+    padding: 0px 5px;
+    border: solid 2px black;
+    height: 40vh;
+    min-height: 400px;
+    width: 100%;
+    max-width: 1500px;
+}
+
+.newest-version {
+    margin-right: 5%;
+    text-align: right;
+}
+
+.transition-button {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 10%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.news-column {
+    background-color:#fffff0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 10px auto 10px;
+    padding: 0px 5px;
+    border: solid 2px black;
+    height: 30vh;
+    width: 100%;
+    max-width: 1500px;
+}
+
+.news-column-title {
+    flex-grow: 1;
+    margin: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.news-column-button {
+    margin: 10px 50px 10px 10px;
+}
+
+.news-column-display {
+    overflow: auto;
+    height: 70%;
+    width: 90%;
+    margin-left: 5%;
+}
+
+/* javaファイル埋め込み */
+.transition-button-detail {
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.menu-button {
+    height: 3%;
+    min-height: 30px;
+    width: 15%;
+    min-width: 150px;
+    font-size: clamp(14px,0.7vw,18px);
+}
+
+/* P000 */
+.password-box {
+    margin-left: 10%;
+    margin-top: 5%;
+}
+
+.password-section {
+    margin-top: 3%;
+}
+
+.password-button {
+    margin-left: 40%;
+    margin-top: 5%;
+    margin-bottom: 10px;
+}
+
+/* R001 */
+.quarter {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 10px;
+}
+
+.quarter-input {
+    flex-grow: 1;
+}
+
+.quarter-date {
+    flex-grow: 1;
+    margin-left: 1%;
+    margin-top: 8px;
+}
+
+.quarter-mark {
+    flex-grow: 30;
+    margin-top: 35px;
+}
+
+.exttaction-condition {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 10px;
+}
+
+.exttaction-condition-display {
+    flex-grow: 1;
+    margin-left: 1%;
+    height: auto;
+    max-height: 400px;
+}
+
+.accounting-standard-of-exttaction {
+    margin-top: 10px;
+    margin-left: 1%;
+    margin-bottom: 30px;
+}
+
+.accounting-standard-of-output-target-form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    gap: 10px;
+}
+
+.output-target-form {
+    flex-grow: 1;
+    margin-left: 5%;
+    height: auto;
+    max-height: 400px;
+}
+
+/* R002 */
+.output-target-form-monthly {
+    flex-grow: 10;
+    margin-left: 5%;
+    height: auto;
+    max-height: 400px;
+}
+
+/* SysErr */
+.err-box {
+    margin: auto;
+}
+
+.err-massage-section {
+    margin-top: 1%;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 12pt;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.err-caution {
+    color: red;
+    font-weight: bold;
+    font-size: 14pt;
+}
+
+/* T001 */
+.new-user-section {
+    width: 10%;
+    margin-top: 12px;
+    text-align: right;
+}
+
+.new-user-section-input {
+    margin-top: 10px;
+    text-align: left;
+}
+
+.all-disclosure-recipient {
+    margin-top: 12px;
+    text-align: left;
+}
+
+.new-user-list {
+    width: 70%;
+    margin-left: 3%;
+    margin-top: 3%;
+}
+
+/* javaファイル埋め込み */
+.add-disclosure-recipient {
+    margin-left: 11%;
+    margin-top: 10px;
+}
+
+/* U001 */
+.registration-info {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.registration-info-display {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    gap: 7px;
+    margin-top: 14px;
+    margin-left: 3%;
+    text-align: right;
+}
+
+.registration-info-input {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex-grow: 20;
+    margin-top: 10px;
+}
+
+.registration-info-manager-related-display {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    gap: 5px;
+    margin-top: 12px;
+    margin-left: 1%;
+    text-align: right;
+}
+
+.registration-info-manager-related-input {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex-grow: 18;
+    margin-top: 10px;
+}
+
+.section-ratio-one {
+    flex-grow: 1;
+    margin-left: 1%;
+    margin-top: 10px;
+}
+
+.section-ratio-two {
+    flex-grow: 2;
+    margin-left: 1%;
+    margin-top: 10px;
+}
+
+.section-ratio-three {
+    flex-grow: 3;
+    margin-left: 1%;
+    margin-top: 10px;
+}
+
+.closing-date {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin-left: 3%;
+}
+
+.manager-related {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin-left: 1.5%;
+}
+
+.other-section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin-left: 1%;
+}
+
+.new-disclosure-recipient-info-title {
+    text-align: left;
+    background-color: cornflowerblue;
+    border: solid 2px darkgray;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: bold;
+}
+
+.new-disclosure-recipient-info-block {
+    border: solid 2px darkgray;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    flex-grow: 1;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+
+.new-disclosure-recipient-exttaction-condition {
+    border: solid 2px darkgray;
+    flex-grow: 1;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+
+.accounting-standard-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 10px;
+    margin-left: 2%;
+}
+
+.exttaction-condition-section {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: right;
+    max-width: 30%;
+    margin-left: 2%;
+}
+
+.exttaction-condition-select {
+    flex-grow: 3;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-width: 30%;
+}
+
+.registration-info-table {
+    border: solid 2px darkgray;
+    border-collapse: collapse;
+    empty-cells: show;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+}
+
+.section-title-blue {
+    background-color: cornflowerblue;
+    border: solid 2px darkgray;
+    font-weight: bold;
+    padding-left: 1%;
+}
+
+.section-blue {
+    background-color: cornflowerblue;
+    border: solid 2px darkgray;
+    padding-left: 2%;
+}
+
+.section-ivory {
+    background-color: #fffff0;
+    border: solid 2px darkgray;
+    padding-left: 2%;
+}
+
+.new-disclosure-recipient-info-display {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    gap: 7px;
+    margin-top: 14px;
+    margin-left: 1%;
+    text-align: right;
+}
+
+.new-disclosure-recipient-info-input {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex-grow: 15;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.new-disclosure-recipient-section {
+    flex-grow: 20;
+    margin-top: 20px;
+}
+
+/* U002 */
+.receipt-check-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.receipt-check-section {
+    flex-grow: 1;
+    margin-top: 10px;
+}
+
+/* javaファイル埋め込み */
+.display-group-section {
+    height: 5%;
+    max-height: 130px;
+}
+
+.display-group-one-row-nospase {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 0px;
+}
+
+.section-right-one-row {
+    width: 10%;
+    margin-top: 10px;
+    text-align: right;
+}
+.section-left-one-row {
+    flex-grow: 1;
+    margin-top: 10px;
+    text-align: left;
+}

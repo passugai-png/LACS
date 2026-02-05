@@ -1,0 +1,23 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta http-equiv="Content-Language" content="ja">
+		<title>ログイン画面</title>
+	</head>
+	<body>
+		<form name="frm" action="/LACSLOGIN/start.login" method="post">
+		</form>
+	<script language="javascript">
+		var dt = new Date();
+		
+		var oneTime = parseInt(dt.getYear() + dt.getMonth() + dt.getDate() + dt.getHours() + dt.getMinutes() + dt.getSeconds() * Math.random() * Math.random() * 1000000000);
+		
+		document.all["frm"].action="/LACSLOGIN/start.login?" + oneTime;
+		document.all["frm"].submit();
+	</script>
+	</body>
+</html>
+                                                                                                                                                                                                
+                                                                                                                                                                                                
+                                                                                                                                                                                                

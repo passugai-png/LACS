@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+            
+    
+    <wb-module deploy-name="LACS">
+        <wb-resource deploy-path="/" source-path="/WebContent" tag="defaultRootSource"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/WEB-INF/src"/>
+        <wb-resource deploy-path="/css" source-path="/css"/>
+        <wb-resource deploy-path="/csv" source-path="/csv"/>
+        <wb-resource deploy-path="/img" source-path="/img"/>
+        <wb-resource deploy-path="/js" source-path="/js"/>
+        <wb-resource deploy-path="/jsp" source-path="/jsp"/>
+        <wb-resource deploy-path="/out_pdf" source-path="/out_pdf"/>
+        <wb-resource deploy-path="/WEB-INF" source-path="/WEB-INF"/>
+                        
+        
+        <property name="java-output-path" value="/LACS/WEB-INF/classes"/>
+                
+        <property name="context-root" value="LACSLOGIN"/>
+                    
+    
+    </wb-module>
+        
+
+</project-modules>
