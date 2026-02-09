@@ -8,7 +8,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html>
 <head>
-	<title>ŠJŽ¦æƒƒ“ƒeƒiƒ“ƒX</title>
+	<title>é–‹ç¤ºå…ˆãƒ¡ãƒ³ãƒ†ãƒŠãƒ³ã‚¹</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=Shift_JIS"/>
 	<meta http-equiv="Content-Style-Type" content="text/css"/>
 	<meta http-equiv="Content-Language" content="ja"/>
@@ -29,10 +29,10 @@
 		<div class="main">
 <%= userBean.getMessage() %>
 			<div class="section">
-				<span class="font-red">¦‚±‚Ì‰æ–Ê‚Å‚ÌÝ’è“à—e‚ÍAŽŸ‰ñŽæ‚èž‚ÝŽž‚æ‚è”½‰f‚³‚ê‚é‚à‚Ì‚Å‚ ‚èA‚·‚Å‚ÉŽæ‚èž‚ÝÏ‚Ý‚ÌŒ_–ñ‚É‚Í”½‰f‚³‚ê‚Ü‚¹‚ñB</span>
+				<span class="font-red">â€»ã“ã®ç”»é¢ã§ã®è¨­å®šå†…å®¹ã¯ã€æ¬¡å›žå–ã‚Šè¾¼ã¿æ™‚ã‚ˆã‚Šåæ˜ ã•ã‚Œã‚‹ã‚‚ã®ã§ã‚ã‚Šã€ã™ã§ã«å–ã‚Šè¾¼ã¿æ¸ˆã¿ã®å¥‘ç´„ã«ã¯åæ˜ ã•ã‚Œã¾ã›ã‚“ã€‚â€»</span>
 			</div>
 			<div class="section">
-				<span class="font-red">* </span>ŠJŽ¦æƒR[ƒhF
+				<span class="font-red">* </span>é–‹ç¤ºå…ˆã‚³ãƒ¼ãƒ‰ï¼š
 <% if(userBean.getProcMode() == LACSDefine.ProcMode.PROC_MODE_UPD){ %>
 				<input type="text" class="textbox-seven" value="<%= LACSUserHTMLUtil.encode(userBean.getUserCosmosCode()) %>" name="cosmosCodeDmy" size="13" maxlength="10" disabled="disabled" tabindex="1"/>
 				<input type="hidden" value="<%= LACSUserHTMLUtil.encode(userBean.getUserCosmosCode()) %>" name="targetCosmosCode"/>
@@ -43,10 +43,10 @@
 			<div class="registration-info">
 				<div class="registration-info-display">
 					<div class="section">
-						<span class="font-red">* </span>ŠJŽ¦æF
+						<span class="font-red">* </span>é–‹ç¤ºå…ˆï¼š
 					</div>
 					<div class="section">
-						<span class="font-red">* </span>ZŠF
+						<span class="font-red">* </span>ä½æ‰€ï¼š
 					</div>
 				</div>
 				<div class="registration-info-input">
@@ -58,14 +58,14 @@
 <% }%>
 					</div>
 					<div class="section">
-<!-- MODIFY Zhen.XB LACS’ •[ƒoƒbƒ`_ŠJŽ¦æƒƒ“ƒeƒiƒ“ƒX‰æ–Ê‚Ì‰üC 2013/03/26 start -->
+<!-- MODIFY Zhen.XB LACSå¸³ç¥¨ãƒãƒƒãƒ_é–‹ç¤ºå…ˆãƒ¡ãƒ³ãƒ†ãƒŠãƒ³ã‚¹ç”»é¢ã®æ”¹ä¿® 2013/03/26 start -->
 <% if ("1".equals(commonBean.getControlTyukiPdf())||("0".equals(commonBean.getControlTyukiPdf())&&"1".equals(commonBean.getAdress()))) { %>
-	<!-- MODIFY Zhen.XB LACS’ •[ƒoƒbƒ`_ŠJŽ¦æƒƒ“ƒeƒiƒ“ƒX‰æ–Ê‚Ì‰üC 2013/03/26 start -->	
-						§ <input type="text" class="textbox-two" maxlength="3" size="4" value="<%= LACSUserHTMLUtil.encode(userBean.getUserZip1()) %>" name="userZip1" tabindex="4"/>
+	<!-- MODIFY Zhen.XB LACSå¸³ç¥¨ãƒãƒƒãƒ_é–‹ç¤ºå…ˆãƒ¡ãƒ³ãƒ†ãƒŠãƒ³ã‚¹ç”»é¢ã®æ”¹ä¿® 2013/03/26 start -->	
+						ã€’ <input type="text" class="textbox-two" maxlength="3" size="4" value="<%= LACSUserHTMLUtil.encode(userBean.getUserZip1()) %>" name="userZip1" tabindex="4"/>
 						<span class="tilde">-</span>
 						<input type="text" class="textbox-three" maxlength="4" size="5" value="<%= LACSUserHTMLUtil.encode(userBean.getUserZip2()) %>" name="userZip2" tabindex="4"/>
 <% }else{ %>
-						§ <input type="text" class="textbox-two" maxlength="3" size="4" value="<%= LACSUserHTMLUtil.encode(userBean.getUserZip1()) %>" name="userZip1" tabindex="4"/>
+						ã€’ <input type="text" class="textbox-two" maxlength="3" size="4" value="<%= LACSUserHTMLUtil.encode(userBean.getUserZip1()) %>" name="userZip1" tabindex="4"/>
 						<span class="tilde">-</span>
 	 					<input type="text" class="textbox-three" maxlength="4" size="5" value="<%= LACSUserHTMLUtil.encode(userBean.getUserZip2()) %>" name="userZip2" tabindex="4"/>
 <% }%>				
@@ -86,8 +86,8 @@
 					</div>				
 				</div>
 				<div class="registration-info-manager-related-display">
-					<div class="section">“d˜b”Ô†F</div>
-					<div class="section">’S“–ŽÒF</div>
+					<div class="section">é›»è©±ç•ªå·ï¼š</div>
+					<div class="section">æ‹…å½“è€…ï¼š</div>
 				</div>
 				<div class="registration-info-manager-related-input">
 					<div class="section">
@@ -100,175 +100,175 @@
 			</div>
 			<div class="closing-date">
 				<div class="section">
-					<span class="font-red">* </span>ŒˆŽZ“úF
+					<span class="font-red">* </span>æ±ºç®—æ—¥ï¼š
 					<input type="text" class="textbox-one" size="2" value="<%= LACSUserHTMLUtil.encode(userBean.getKesnKiMM()) %>" name="kesnKiMM" maxlength="2" tabindex="7" />
-					ŒŽ
+					æœˆ
 					<input type="text" class="textbox-one" size="2" value="<%= LACSUserHTMLUtil.encode(userBean.getKesnKiDD()) %>" name="kesnKiDD" maxlength="2" tabindex="7" />
-					“ú
+					æ—¥
 				</div>
 				<div class="section">
-<!-- ADD Zhen.XB LACS’ •[ƒoƒbƒ`_ŠJŽ¦æƒƒ“ƒeƒiƒ“ƒX‰æ–Ê‚Ì‰üC 2013/03/21 start -->
-<!-- MODIFY Zhen.XB LACS’ •[ƒoƒbƒ`_ŠJŽ¦æƒƒ“ƒeƒiƒ“ƒX‰æ–Ê‚Ì‰üC 2013/05/27 start -->
+<!-- ADD Zhen.XB LACSå¸³ç¥¨ãƒãƒƒãƒ_é–‹ç¤ºå…ˆãƒ¡ãƒ³ãƒ†ãƒŠãƒ³ã‚¹ç”»é¢ã®æ”¹ä¿® 2013/03/21 start -->
+<!-- MODIFY Zhen.XB LACSå¸³ç¥¨ãƒãƒƒãƒ_é–‹ç¤ºå…ˆãƒ¡ãƒ³ãƒ†ãƒŠãƒ³ã‚¹ç”»é¢ã®æ”¹ä¿® 2013/05/27 start -->
 <% if ("1".equals(commonBean.getAdress())) { %>
-					o—ÍƒTƒCƒNƒ‹F
+					å‡ºåŠ›ã‚µã‚¤ã‚¯ãƒ«ï¼š
 					<select class="pulldown-four" name="batchPrintTimingCd" tabindex="7">
 					<%= LACSUserHTMLUtil.outHTMLCombo(userBean.getBatchPrintTimingCd())%>
 					</select>
 <% }%>
 				</div>
 			</div>
-<!-- MODIFY Zhen.XB LACS’ •[ƒoƒbƒ`_ŠJŽ¦æƒƒ“ƒeƒiƒ“ƒX‰æ–Ê‚Ì‰üC 2013/05/27 end -->
-<!-- MODIFY Zhen.XB LACS’ •[ƒoƒbƒ`_ŠJŽ¦æƒƒ“ƒeƒiƒ“ƒX‰æ–Ê‚Ì‰üC 2013/05/22 start -->
+<!-- MODIFY Zhen.XB LACSå¸³ç¥¨ãƒãƒƒãƒ_é–‹ç¤ºå…ˆãƒ¡ãƒ³ãƒ†ãƒŠãƒ³ã‚¹ç”»é¢ã®æ”¹ä¿® 2013/05/27 end -->
+<!-- MODIFY Zhen.XB LACSå¸³ç¥¨ãƒãƒƒãƒ_é–‹ç¤ºå…ˆãƒ¡ãƒ³ãƒ†ãƒŠãƒ³ã‚¹ç”»é¢ã®æ”¹ä¿® 2013/05/22 start -->
 <% if ("1".equals(commonBean.getAdress())) { %>
 			<div class="manager-related">
 				<div class="section-ratio-one">
 					<div class="section">
-						•”ƒR[ƒhF
+						éƒ¨ç½²ã‚³ãƒ¼ãƒ‰ï¼š
 						<input type="text" class="textbox-three" size="2" value="<%= LACSUserHTMLUtil.encode(userBean.getLcShzkSho()) %>" name="lcShzkSho" maxlength="2" tabindex="8" />
 						<span class="tilde">-</span>
 						<input type="text" class="textbox-three" size="2" value="<%= LACSUserHTMLUtil.encode(userBean.getLcShzkBu()) %>" name="lcShzkBu" maxlength="2" tabindex="8" />
 						<span class="tilde">-</span>
 						<input type="text" class="textbox-three" size="2" value="<%= LACSUserHTMLUtil.encode(userBean.getLcShzkGrp()) %>" name="lcShzkGrp" maxlength="2" tabindex="8" />
-						<span class="section">•”–¼F</span>
+						<span class="section">éƒ¨ç½²åï¼š</span>
 						<input type="text" class="textbox-eight" value="<%= LACSUserHTMLUtil.encode(userBean.getLcShzkNm()) %>" name="lcShzkNm" size="13" maxlength="6" tabindex="9"/>
 					</div>
 				</div>
 				<div class="section-ratio-one">
 					<div class="section">
-						’S“–ŽÒƒR[ƒhF
+						æ‹…å½“è€…ã‚³ãƒ¼ãƒ‰ï¼š
 						<input type="text" class="textbox-six" value="<%= LACSUserHTMLUtil.encode(userBean.getLcTntCd()) %>" name="lcTntCd" size="4" maxlength="4" tabindex="9"/>
-						<span class="section">’S“–ŽÒ–¼F</span>
+						<span class="section">æ‹…å½“è€…åï¼š</span>
 						<input type="text" class="textbox-eight" value="<%= LACSUserHTMLUtil.encode(userBean.getLcTntNm()) %>" name="lcTntNm" size="18" maxlength="10" tabindex="9"/>
 					</div>
 				</div>
 			</div>
 <% }%>
-<!-- MODIFY Zhen.XB LACS’ •[ƒoƒbƒ`_ŠJŽ¦æƒƒ“ƒeƒiƒ“ƒX‰æ–Ê‚Ì‰üC 2013/05/22 end -->
-<!-- ADD Zhen.XB LACS’ •[ƒoƒbƒ`_ŠJŽ¦æƒƒ“ƒeƒiƒ“ƒX‰æ–Ê‚Ì‰üC 2013/03/21 end -->
+<!-- MODIFY Zhen.XB LACSå¸³ç¥¨ãƒãƒƒãƒ_é–‹ç¤ºå…ˆãƒ¡ãƒ³ãƒ†ãƒŠãƒ³ã‚¹ç”»é¢ã®æ”¹ä¿® 2013/05/22 end -->
+<!-- ADD Zhen.XB LACSå¸³ç¥¨ãƒãƒƒãƒ_é–‹ç¤ºå…ˆãƒ¡ãƒ³ãƒ†ãƒŠãƒ³ã‚¹ç”»é¢ã®æ”¹ä¿® 2013/03/21 end -->
 			<div class="other-section">
 				<div class="section">
-					‰ïŒvˆ—•û–@F
+					ä¼šè¨ˆå‡¦ç†æ–¹æ³•ï¼š
 					<select class="pulldown-three" name="acShrKbn"  tabindex="10">
 						<%= LACSUserHTMLUtil.outHTMLCombo(userBean.getAcShrKbn())%>
 					</select>
 				</div>
 				<div class="section">
-					¼—ï˜a—ïF
+					è¥¿æš¦å’Œæš¦ï¼š
 					<select class="pulldown-two" name="seirekiWarekiCode"  tabindex="10">
 						<%= LACSUserHTMLUtil.outHTMLCombo(userBean.getSeirekiWarekiCode())%>
 					</select>
 				</div>
 				<div class="section">
-					—˜Žq—¦‚Ì¸“xF
+					åˆ©å­çŽ‡ã®ç²¾åº¦ï¼š
 					<select class="pulldown-one" name="syosuKetasu"  tabindex="10">
 						<%= LACSUserHTMLUtil.outHTMLCombo(userBean.getSyosuKetasu())%>
 					</select>
 				</div>
 			</div>
 <% if(commonBean.isShowSumUnt()) { %>
-			<div class="new-disclosure-recipient-info-title">WŒv’PˆÊ</div>
+			<div class="new-disclosure-recipient-info-title">é›†è¨ˆå˜ä½</div>
 			<div class="new-disclosure-recipient-info-block">
 				<div class="section-ratio-one">
-					‹ŒƒŠ[ƒX‰ïŒvŠî€F
-					<label><input tabindex="11" type="radio" class="radiobutton" value="0" name="oldSumUnt" <%= userBean.getOldSumUnt().equals("0") ? " checked" : "" %>/>Œ_–ñ’PˆÊ</label>
-					<label><input tabindex="11" type="radio" class="radiobutton" value="1" name="oldSumUnt" <%= userBean.getOldSumUnt().equals("1") ? " checked" : "" %>/>Ž‘ŽY’PˆÊ</label>
+					æ—§ãƒªãƒ¼ã‚¹ä¼šè¨ˆåŸºæº–ï¼š
+					<label><input tabindex="11" type="radio" class="radiobutton" value="0" name="oldSumUnt" <%= userBean.getOldSumUnt().equals("0") ? " checked" : "" %>/>å¥‘ç´„å˜ä½</label>
+					<label><input tabindex="11" type="radio" class="radiobutton" value="1" name="oldSumUnt" <%= userBean.getOldSumUnt().equals("1") ? " checked" : "" %>/>è³‡ç”£å˜ä½</label>
 				</div>
 				<div class="section-ratio-one">
-					VƒŠ[ƒX‰ïŒvŠî€F
-					<label><input tabindex="11" type="radio" class="radiobutton" value="0" name="newSumUnt" <%= userBean.getNewSumUnt().equals("0") ? " checked" : "" %>/>Œ_–ñ’PˆÊ</label>
-					<label><input tabindex="11" type="radio" class="radiobutton" value="1" name="newSumUnt" <%= userBean.getNewSumUnt().equals("1") ? " checked" : "" %>/>Ž‘ŽY’PˆÊ</label>
+					æ–°ãƒªãƒ¼ã‚¹ä¼šè¨ˆåŸºæº–ï¼š
+					<label><input tabindex="11" type="radio" class="radiobutton" value="0" name="newSumUnt" <%= userBean.getNewSumUnt().equals("0") ? " checked" : "" %>/>å¥‘ç´„å˜ä½</label>
+					<label><input tabindex="11" type="radio" class="radiobutton" value="1" name="newSumUnt" <%= userBean.getNewSumUnt().equals("1") ? " checked" : "" %>/>è³‡ç”£å˜ä½</label>
 				</div>
 			</div>
 <% } %>
-			<div class="new-disclosure-recipient-info-title">’ŠoðŒ</div>
+			<div class="new-disclosure-recipient-info-title">æŠ½å‡ºæ¡ä»¶</div>
 			<div class="new-disclosure-recipient-exttaction-condition">
 				<div class="input-group-row">
 					<div class="section-ratio-two">
-						’‹L’ •[o—Í
+						æ³¨è¨˜å¸³ç¥¨å‡ºåŠ›
 					</div>
 					<div class="section-ratio-one">
-						ŒŽŽŸ’ •[o—Í
+						æœˆæ¬¡å¸³ç¥¨å‡ºåŠ›
 					</div>
 				</div>
 				<div class="accounting-standard-row">
 					<div class="section-ratio-one">
-						‹ŒƒŠ[ƒX‰ïŒvŠî€
+						æ—§ãƒªãƒ¼ã‚¹ä¼šè¨ˆåŸºæº–
 					</div>
 					<div class="section-ratio-three">
-						VƒŠ[ƒX‰ïŒvŠî€
+						æ–°ãƒªãƒ¼ã‚¹ä¼šè¨ˆåŸºæº–
 					</div>
 				</div>
 				<div class="input-group-row">
 					<div class="exttaction-condition-section">
-						<div class="section">­ŠzŽ‘ŽYF</div>
-						<div class="section">ƒŠ[ƒXŠúŠÔ1”N–¢–žF</div>
-						<div class="section">ÄƒŠ[ƒXŒ_–ñF</div>
-						<div class="section">’†“r‰ð–ñ•¨ŒF</div>
+						<div class="section">å°‘é¡è³‡ç”£ï¼š</div>
+						<div class="section">ãƒªãƒ¼ã‚¹æœŸé–“1å¹´æœªæº€ï¼š</div>
+						<div class="section">å†ãƒªãƒ¼ã‚¹å¥‘ç´„ï¼š</div>
+						<div class="section">ä¸­é€”è§£ç´„ç‰©ä»¶ï¼š</div>
 					</div>
 					<div class="exttaction-condition-select">
 						<div class="section">
-							<label><input type="radio" class="radiobutton" value="0" name="oldSgkKeiJgiFlg" tabindex="11"<%= userBean.getOldSgkKeiJgiFlg().equals("0") ? " checked" : "" %>/>œ‚­</label>
-							<label><input type="radio" class="radiobutton" value="1" name="oldSgkKeiJgiFlg" tabindex="11"<%= userBean.getOldSgkKeiJgiFlg().equals("1") ? " checked" : "" %>/>œ‚©‚È‚¢</label>
+							<label><input type="radio" class="radiobutton" value="0" name="oldSgkKeiJgiFlg" tabindex="11"<%= userBean.getOldSgkKeiJgiFlg().equals("0") ? " checked" : "" %>/>é™¤ã</label>
+							<label><input type="radio" class="radiobutton" value="1" name="oldSgkKeiJgiFlg" tabindex="11"<%= userBean.getOldSgkKeiJgiFlg().equals("1") ? " checked" : "" %>/>é™¤ã‹ãªã„</label>
 						</div>
 						<div class="section">
-							<label><input type="radio" class="radiobutton" value="0" name="oldSrtKeiJgiFlg" tabindex="11"<%= userBean.getOldSrtKeiJgiFlg().equals("0") ? " checked" : "" %>/>œ‚­</label>
-							<label><input type="radio" class="radiobutton" value="1" name="oldSrtKeiJgiFlg" tabindex="11"<%= userBean.getOldSrtKeiJgiFlg().equals("1") ? " checked" : "" %>/>œ‚©‚È‚¢</label>
+							<label><input type="radio" class="radiobutton" value="0" name="oldSrtKeiJgiFlg" tabindex="11"<%= userBean.getOldSrtKeiJgiFlg().equals("0") ? " checked" : "" %>/>é™¤ã</label>
+							<label><input type="radio" class="radiobutton" value="1" name="oldSrtKeiJgiFlg" tabindex="11"<%= userBean.getOldSrtKeiJgiFlg().equals("1") ? " checked" : "" %>/>é™¤ã‹ãªã„</label>
 						</div>
 						<div class="section">
-							<label><input type="radio" class="radiobutton" value="0" name="oldRlsKeiJgiFlg" tabindex="11"<%= userBean.getOldRlsKeiJgiFlg().equals("0") ? " checked" : "" %>/>œ‚­</label>
-							<label><input type="radio" class="radiobutton" value="1" name="oldRlsKeiJgiFlg" tabindex="11"<%= userBean.getOldRlsKeiJgiFlg().equals("1") ? " checked" : "" %>/>œ‚©‚È‚¢</label>
+							<label><input type="radio" class="radiobutton" value="0" name="oldRlsKeiJgiFlg" tabindex="11"<%= userBean.getOldRlsKeiJgiFlg().equals("0") ? " checked" : "" %>/>é™¤ã</label>
+							<label><input type="radio" class="radiobutton" value="1" name="oldRlsKeiJgiFlg" tabindex="11"<%= userBean.getOldRlsKeiJgiFlg().equals("1") ? " checked" : "" %>/>é™¤ã‹ãªã„</label>
 						</div>
 						<div class="section">
-							<label><input type="radio" class="radiobutton" value="0" name="oldCytKaiJgiFlg" tabindex="11"<%= userBean.getOldCytKaiJgiFlg().equals("0") ? " checked" : "" %>/>œ‚­</label>
-							<label><input type="radio" class="radiobutton" value="1" name="oldCytKaiJgiFlg" tabindex="11"<%= userBean.getOldCytKaiJgiFlg().equals("1") ? " checked" : "" %>/>œ‚©‚È‚¢</label>
+							<label><input type="radio" class="radiobutton" value="0" name="oldCytKaiJgiFlg" tabindex="11"<%= userBean.getOldCytKaiJgiFlg().equals("0") ? " checked" : "" %>/>é™¤ã</label>
+							<label><input type="radio" class="radiobutton" value="1" name="oldCytKaiJgiFlg" tabindex="11"<%= userBean.getOldCytKaiJgiFlg().equals("1") ? " checked" : "" %>/>é™¤ã‹ãªã„</label>
 						</div>
 					</div>
 					<div class="exttaction-condition-section">
-						<div class="section">­ŠzŽ‘ŽYF</div>
-						<div class="section">ƒŠ[ƒXŠúŠÔ1”N–¢–žF</div>
-						<div class="section">ÄƒŠ[ƒXŒ_–ñF</div>
-						<div class="section">’†“r‰ð–ñ•¨ŒF</div>
+						<div class="section">å°‘é¡è³‡ç”£ï¼š</div>
+						<div class="section">ãƒªãƒ¼ã‚¹æœŸé–“1å¹´æœªæº€ï¼š</div>
+						<div class="section">å†ãƒªãƒ¼ã‚¹å¥‘ç´„ï¼š</div>
+						<div class="section">ä¸­é€”è§£ç´„ç‰©ä»¶ï¼š</div>
 					</div>
 					<div class="exttaction-condition-select">
 						<div class="section">
-							<label><input type="radio" class="radiobutton" value="0" name="newSgkKeiJgiFlg" tabindex="12"<%= userBean.getNewSgkKeiJgiFlg().equals("0") ? " checked" : "" %>/>œ‚­</label>
-							<label><input type="radio" class="radiobutton" value="1" name="newSgkKeiJgiFlg" tabindex="12"<%= userBean.getNewSgkKeiJgiFlg().equals("1") ? " checked" : "" %>/>œ‚©‚È‚¢</label>
+							<label><input type="radio" class="radiobutton" value="0" name="newSgkKeiJgiFlg" tabindex="12"<%= userBean.getNewSgkKeiJgiFlg().equals("0") ? " checked" : "" %>/>é™¤ã</label>
+							<label><input type="radio" class="radiobutton" value="1" name="newSgkKeiJgiFlg" tabindex="12"<%= userBean.getNewSgkKeiJgiFlg().equals("1") ? " checked" : "" %>/>é™¤ã‹ãªã„</label>
 						</div>
 						<div class="section">
-							<label><input type="radio" class="radiobutton" value="0" name="newSrtKeiJgiFlg" tabindex="12"<%= userBean.getNewSrtKeiJgiFlg().equals("0") ? " checked" : "" %>/>œ‚­</label>
-							<label><input type="radio" class="radiobutton" value="1" name="newSrtKeiJgiFlg" tabindex="12"<%= userBean.getNewSrtKeiJgiFlg().equals("1") ? " checked" : "" %>/>œ‚©‚È‚¢</label>
+							<label><input type="radio" class="radiobutton" value="0" name="newSrtKeiJgiFlg" tabindex="12"<%= userBean.getNewSrtKeiJgiFlg().equals("0") ? " checked" : "" %>/>é™¤ã</label>
+							<label><input type="radio" class="radiobutton" value="1" name="newSrtKeiJgiFlg" tabindex="12"<%= userBean.getNewSrtKeiJgiFlg().equals("1") ? " checked" : "" %>/>é™¤ã‹ãªã„</label>
 						</div>
 						<div class="section">
-							<label><input type="radio" class="radiobutton" value="0" name="newRlsKeiJgiFlg" tabindex="12"<%= userBean.getNewRlsKeiJgiFlg().equals("0") ? " checked" : "" %>/>œ‚­</label>
-							<label><input type="radio" class="radiobutton" value="1" name="newRlsKeiJgiFlg" tabindex="12"<%= userBean.getNewRlsKeiJgiFlg().equals("1") ? " checked" : "" %>/>œ‚©‚È‚¢</label>
+							<label><input type="radio" class="radiobutton" value="0" name="newRlsKeiJgiFlg" tabindex="12"<%= userBean.getNewRlsKeiJgiFlg().equals("0") ? " checked" : "" %>/>é™¤ã</label>
+							<label><input type="radio" class="radiobutton" value="1" name="newRlsKeiJgiFlg" tabindex="12"<%= userBean.getNewRlsKeiJgiFlg().equals("1") ? " checked" : "" %>/>é™¤ã‹ãªã„</label>
 						</div>
 						<div class="section">
-							<label><input type="radio" class="radiobutton" value="0" name="newCytKaiJgiFlg" tabindex="12"<%= userBean.getNewCytKaiJgiFlg().equals("0") ? " checked" : "" %>/>œ‚­</label>
-							<label><input type="radio" class="radiobutton" value="1" name="newCytKaiJgiFlg" tabindex="12"<%= userBean.getNewCytKaiJgiFlg().equals("1") ? " checked" : "" %>/>œ‚©‚È‚¢</label>
+							<label><input type="radio" class="radiobutton" value="0" name="newCytKaiJgiFlg" tabindex="12"<%= userBean.getNewCytKaiJgiFlg().equals("0") ? " checked" : "" %>/>é™¤ã</label>
+							<label><input type="radio" class="radiobutton" value="1" name="newCytKaiJgiFlg" tabindex="12"<%= userBean.getNewCytKaiJgiFlg().equals("1") ? " checked" : "" %>/>é™¤ã‹ãªã„</label>
 						</div>
 					</div>
 					<div class="exttaction-condition-section">
-						<div class="section">­ŠzŽ‘ŽYF</div>
-						<div class="section">ƒŠ[ƒXŠúŠÔ1”N–¢–žF</div>
-						<div class="section">ÄƒŠ[ƒXŒ_–ñF</div>
-						<div class="section">’†“r‰ð–ñ•¨ŒF</div>
+						<div class="section">å°‘é¡è³‡ç”£ï¼š</div>
+						<div class="section">ãƒªãƒ¼ã‚¹æœŸé–“1å¹´æœªæº€ï¼š</div>
+						<div class="section">å†ãƒªãƒ¼ã‚¹å¥‘ç´„ï¼š</div>
+						<div class="section">ä¸­é€”è§£ç´„ç‰©ä»¶ï¼š</div>
 					</div>
 					<div class="exttaction-condition-select">
 						<div class="section">
-							<label><input type="radio" class="radiobutton" value="0" name="gtjSgkKeiJgiFlg" tabindex="13"<%= userBean.getGtjSgkKeiJgiFlg().equals("0") ? " checked" : "" %>/>œ‚­</label>
-							<label><input type="radio" class="radiobutton" value="1" name="gtjSgkKeiJgiFlg" tabindex="13"<%= userBean.getGtjSgkKeiJgiFlg().equals("1") ? " checked" : "" %>/>œ‚©‚È‚¢</label>
+							<label><input type="radio" class="radiobutton" value="0" name="gtjSgkKeiJgiFlg" tabindex="13"<%= userBean.getGtjSgkKeiJgiFlg().equals("0") ? " checked" : "" %>/>é™¤ã</label>
+							<label><input type="radio" class="radiobutton" value="1" name="gtjSgkKeiJgiFlg" tabindex="13"<%= userBean.getGtjSgkKeiJgiFlg().equals("1") ? " checked" : "" %>/>é™¤ã‹ãªã„</label>
 						</div>
 						<div class="section">
-							<label><input type="radio" class="radiobutton" value="0" name="gtjSrtKeiJgiFlg" tabindex="13"<%= userBean.getGtjSrtKeiJgiFlg().equals("0") ? " checked" : "" %>/>œ‚­</label>
-							<label><input type="radio" class="radiobutton" value="1" name="gtjSrtKeiJgiFlg" tabindex="13"<%= userBean.getGtjSrtKeiJgiFlg().equals("1") ? " checked" : "" %>/>œ‚©‚È‚¢</label>
+							<label><input type="radio" class="radiobutton" value="0" name="gtjSrtKeiJgiFlg" tabindex="13"<%= userBean.getGtjSrtKeiJgiFlg().equals("0") ? " checked" : "" %>/>é™¤ã</label>
+							<label><input type="radio" class="radiobutton" value="1" name="gtjSrtKeiJgiFlg" tabindex="13"<%= userBean.getGtjSrtKeiJgiFlg().equals("1") ? " checked" : "" %>/>é™¤ã‹ãªã„</label>
 						</div>
 						<div class="section">
-							<label><input type="radio" class="radiobutton" value="0" name="gtjRlsKeiJgiFlg" tabindex="13"<%= userBean.getGtjRlsKeiJgiFlg().equals("0") ? " checked" : "" %>/>œ‚­</label>
-							<label><input type="radio" class="radiobutton" value="1" name="gtjRlsKeiJgiFlg" tabindex="13"<%= userBean.getGtjRlsKeiJgiFlg().equals("1") ? " checked" : "" %>/>œ‚©‚È‚¢</label>
+							<label><input type="radio" class="radiobutton" value="0" name="gtjRlsKeiJgiFlg" tabindex="13"<%= userBean.getGtjRlsKeiJgiFlg().equals("0") ? " checked" : "" %>/>é™¤ã</label>
+							<label><input type="radio" class="radiobutton" value="1" name="gtjRlsKeiJgiFlg" tabindex="13"<%= userBean.getGtjRlsKeiJgiFlg().equals("1") ? " checked" : "" %>/>é™¤ã‹ãªã„</label>
 						</div>
 						<div class="section">
-							<label><input type="radio" class="radiobutton" value="0" name="gtjCytKaiJgiFlg" tabindex="13"<%= userBean.getGtjCytKaiJgiFlg().equals("0") ? " checked" : "" %>/>œ‚­</label>
-							<label><input type="radio" class="radiobutton" value="1" name="gtjCytKaiJgiFlg" tabindex="13"<%= userBean.getGtjCytKaiJgiFlg().equals("1") ? " checked" : "" %>/>œ‚©‚È‚¢</label>
+							<label><input type="radio" class="radiobutton" value="0" name="gtjCytKaiJgiFlg" tabindex="13"<%= userBean.getGtjCytKaiJgiFlg().equals("0") ? " checked" : "" %>/>é™¤ã</label>
+							<label><input type="radio" class="radiobutton" value="1" name="gtjCytKaiJgiFlg" tabindex="13"<%= userBean.getGtjCytKaiJgiFlg().equals("1") ? " checked" : "" %>/>é™¤ã‹ãªã„</label>
 						</div>
 					</div>
 				</div>
@@ -276,16 +276,16 @@
 			<table class="registration-info-table">
 				<tr>
 					<td class="section-title-blue"></td>
-					<td class="section-title-blue">‹ŒƒŠ[ƒX‰ïŒvŠî€</td>
-					<td class="section-title-blue">VƒŠ[ƒX‰ïŒvŠî€</td>
+					<td class="section-title-blue">æ—§ãƒªãƒ¼ã‚¹ä¼šè¨ˆåŸºæº–</td>
+					<td class="section-title-blue">æ–°ãƒªãƒ¼ã‚¹ä¼šè¨ˆåŸºæº–</td>
 				</tr>
 				<tr>
-					<td class="section-title-blue">Š—LŒ ˆÚ“]ƒtƒ@ƒCƒiƒ“ƒXƒŠ[ƒX‚É‚¨‚¯‚éŒ¸‰¿ž‹p•û–@</td>
+					<td class="section-title-blue">æ‰€æœ‰æ¨©ç§»è»¢ãƒ•ã‚¡ã‚¤ãƒŠãƒ³ã‚¹ãƒªãƒ¼ã‚¹ã«ãŠã‘ã‚‹æ¸›ä¾¡å„Ÿå´æ–¹æ³•</td>
 					<td class="section-ivory"></td>
 					<td class="section-ivory"></td>
 				</tr>
 				<tr>
-					<td class="section-blue">—LŒ`Ž‘ŽY</td>
+					<td class="section-blue">æœ‰å½¢è³‡ç”£</td>
 					<td class="section-ivory">
 						<select class="pulldwon-five" name="oldItenYukeiSkkHohoCd" tabindex="15">
 							<%= LACSUserHTMLUtil.outHTMLCombo(userBean.getOldItenYukeiSkkHohoCd())%>
@@ -298,7 +298,7 @@
 					</td>
 				</tr>
 				<tr>
-					<td class="section-blue">–³Œ`Ž‘ŽY</td>
+					<td class="section-blue">ç„¡å½¢è³‡ç”£</td>
 					<td class="section-ivory">
 						<select class="pulldwon-five" name="oldItenMukeiSkkHohoCd" tabindex="17">
 							<%= LACSUserHTMLUtil.outHTMLCombo(userBean.getOldItenMukeiSkkHohoCd())%>
@@ -311,12 +311,12 @@
 					</td>
 				</tr>
 				<tr>
-					<td class="section-title-blue">Š—LŒ ˆÚ“]ŠOƒtƒ@ƒCƒiƒ“ƒXƒŠ[ƒX‚É‚¨‚¯‚éŒ¸‰¿ž‹p•û–@</td>
+					<td class="section-title-blue">æ‰€æœ‰æ¨©ç§»è»¢å¤–ãƒ•ã‚¡ã‚¤ãƒŠãƒ³ã‚¹ãƒªãƒ¼ã‚¹ã«ãŠã‘ã‚‹æ¸›ä¾¡å„Ÿå´æ–¹æ³•</td>
 					<td class="section-ivory"></td>
 					<td class="section-ivory"></td>
 				</tr>
 				<tr>
-					<td class="section-blue">—LŒ`Ž‘ŽY</td>
+					<td class="section-blue">æœ‰å½¢è³‡ç”£</td>
 					<td class="section-ivory">
 						<select class="pulldwon-five" name="oldItengiYukeiSkkHohoCd" tabindex="19">
 							<%= LACSUserHTMLUtil.outHTMLCombo(userBean.getOldItengiYukeiSkkHohoCd())%>
@@ -329,7 +329,7 @@
 					</td>
 				</tr>
 				<tr>
-					<td class="section-blue">–³Œ`Ž‘ŽY</td>
+					<td class="section-blue">ç„¡å½¢è³‡ç”£</td>
 					<td class="section-ivory">
 						<select class="pulldwon-five" name="oldItengiMukeiSkkHohoCd" tabindex="21">
 							<%= LACSUserHTMLUtil.outHTMLCombo(userBean.getOldItengiMukeiSkkHohoCd())%>
@@ -342,12 +342,12 @@
 					</td>
 				</tr>
 				<tr>
-					<td class="section-title-blue">—˜‘§ŒvŽZ•û–@</td>
+					<td class="section-title-blue">åˆ©æ¯è¨ˆç®—æ–¹æ³•</td>
 					<td class="section-ivory"></td>
 					<td class="section-ivory"></td>
 				</tr>
 				<tr>
-					<td class="section-blue">—˜‘§‘Š“–Šz”z•ª•û–@</td>
+					<td class="section-blue">åˆ©æ¯ç›¸å½“é¡é…åˆ†æ–¹æ³•</td>
 					<td class="section-ivory">
 						<select class="pulldown-four" name="oldRskClcHohoCd" tabindex="23">
 							<%= LACSUserHTMLUtil.outHTMLCombo(userBean.getOldRskClcHohoCd())%>
@@ -360,7 +360,7 @@
 					</td>
 				</tr>
 				<tr>
-					<td class="section-blue">•Š‹à“WŠJ•û–@</td>
+					<td class="section-blue">è³¦é‡‘å±•é–‹æ–¹æ³•</td>
 					<td class="section-ivory">
 						<select class="pulldown-four" name="oldFknTnkiHohoCd" tabindex="25">
 							<%= LACSUserHTMLUtil.outHTMLCombo(userBean.getOldFknTnkiHohoCd())%>
@@ -373,12 +373,12 @@
 					</td>
 				</tr>
 				<tr>
-					<td class="section-title-blue">d—v«”»’fŠî€</td>
+					<td class="section-title-blue">é‡è¦æ€§åˆ¤æ–­åŸºæº–</td>
 					<td class="section-ivory"></td>
 					<td class="section-ivory"></td>
 				</tr>
 				<tr>
-					<td class="section-blue">ˆÛŽŠÇ—”ïd—v«‹æ•ª</td>
+					<td class="section-blue">ç¶­æŒç®¡ç†è²»é‡è¦æ€§åŒºåˆ†</td>
 					<td class="section-ivory">
 						<select class="pulldown-three" name="oldIjiKnriHyoJyoKbn" tabindex="27">
 							<%= LACSUserHTMLUtil.outHTMLCombo(userBean.getOldIjiKnriHyoJyoKbn())%>
@@ -391,7 +391,7 @@
 					</td>
 				</tr>
 				<tr>
-					<td class="section-blue">–ð–±’ñ‹Ÿ”ïd—v«‹æ•ª</td>
+					<td class="section-blue">å½¹å‹™æä¾›è²»é‡è¦æ€§åŒºåˆ†</td>
 					<td class="section-ivory">
 						<select class="pulldown-three" name="oldEkmTeikHyoJyoKbn" tabindex="29">
 							<%= LACSUserHTMLUtil.outHTMLCombo(userBean.getOldEkmTeikHyoJyoKbn())%>
@@ -404,12 +404,12 @@
 					</td>
 				</tr>
 				<tr>
-					<td class="section-title-blue">’[”’²®•û–@</td>
+					<td class="section-title-blue">ç«¯æ•°èª¿æ•´æ–¹æ³•</td>
 					<td class="section-ivory"></td>
 					<td class="section-ivory"></td>
 				</tr>
 				<tr>
-					<td class="section-blue">Œ¸‰¿ž‹p</td>
+					<td class="section-blue">æ¸›ä¾¡å„Ÿå´</td>
 					<td class="section-ivory">
 						<select class="pulldown-three" name="oldGnkskHasuChseCd" tabindex="31">
 							<%= LACSUserHTMLUtil.outHTMLCombo(userBean.getOldGnkskHasuChseCd())%>
@@ -422,7 +422,7 @@
 					</td>
 				</tr>
 				<tr>
-					<td class="section-blue">•Š‹à“WŠJ</td>
+					<td class="section-blue">è³¦é‡‘å±•é–‹</td>
 					<td class="section-ivory">
 						<select class="pulldown-three" name="oldFknTnkiHasuChseCd" tabindex="33">
 							<%= LACSUserHTMLUtil.outHTMLCombo(userBean.getOldFknTnkiHasuChseCd())%>
@@ -435,29 +435,29 @@
 					</td>
 				</tr>
 				<tr>
-					<td class="section-title-blue">w“ü’Ê’m—L–³</td>
+					<td class="section-title-blue">è³¼å…¥é€šçŸ¥æœ‰ç„¡</td>
 					<td class="section-ivory">
-						<label><input type="radio" class="radiobutton" value="0" name="oldKnuAmtTutiUmFlg" tabindex="35"<%= userBean.getOldKnuAmtTutiUmFlg().equals("0") ? " checked" : "" %>/>’Ê’m</label>
-						<label><input type="radio" class="radiobutton" value="1" name="oldKnuAmtTutiUmFlg" tabindex="35"<%= userBean.getOldKnuAmtTutiUmFlg().equals("1") ? " checked" : "" %>/>”ñ’Ê’m</label>
+						<label><input type="radio" class="radiobutton" value="0" name="oldKnuAmtTutiUmFlg" tabindex="35"<%= userBean.getOldKnuAmtTutiUmFlg().equals("0") ? " checked" : "" %>/>é€šçŸ¥</label>
+						<label><input type="radio" class="radiobutton" value="1" name="oldKnuAmtTutiUmFlg" tabindex="35"<%= userBean.getOldKnuAmtTutiUmFlg().equals("1") ? " checked" : "" %>/>éžé€šçŸ¥</label>
 					</td>
 					<td class="section-ivory">
-						<label><input type="radio" class="radiobutton" value="0" name="newKnuAmtTutiUmFlg" tabindex="36"<%= userBean.getNewKnuAmtTutiUmFlg().equals("0") ? " checked" : "" %>/>’Ê’m</label>
-						<label><input type="radio" class="radiobutton" value="1" name="newKnuAmtTutiUmFlg" tabindex="36"<%= userBean.getNewKnuAmtTutiUmFlg().equals("1") ? " checked" : "" %>/>”ñ’Ê’m</label>
+						<label><input type="radio" class="radiobutton" value="0" name="newKnuAmtTutiUmFlg" tabindex="36"<%= userBean.getNewKnuAmtTutiUmFlg().equals("0") ? " checked" : "" %>/>é€šçŸ¥</label>
+						<label><input type="radio" class="radiobutton" value="1" name="newKnuAmtTutiUmFlg" tabindex="36"<%= userBean.getNewKnuAmtTutiUmFlg().equals("1") ? " checked" : "" %>/>éžé€šçŸ¥</label>
 					</td>
 				</tr>
 			</table>							
-			<div class="new-disclosure-recipient-info-title">•\Ž¦—pƒŠ[ƒX‰ïŽÐî•ñ</div>
+			<div class="new-disclosure-recipient-info-title">è¡¨ç¤ºç”¨ãƒªãƒ¼ã‚¹ä¼šç¤¾æƒ…å ±</div>
 			<div class="new-disclosure-recipient-info-block">
 				<div class="new-disclosure-recipient-info-display">
-					<div class="section">ƒŠ[ƒX‰ïŽÐF</div>
-					<div class="section">ZŠF</div>
+					<div class="section">ãƒªãƒ¼ã‚¹ä¼šç¤¾ï¼š</div>
+					<div class="section">ä½æ‰€ï¼š</div>
 				</div>
 				<div class="new-disclosure-recipient-info-input">
 					<div class="section">
 						<input type="text" class="textbox-seven" maxlength="25" size="65" value="<%= LACSUserHTMLUtil.encode(userBean.getPdfCompanyName()) %>" name="pdfCompanyName" tabindex="37"/>
 					</div>
 					<div class="section">
-						§ <input type="text" class="textbox-two" maxlength="3" size="4" value="<%= LACSUserHTMLUtil.encode(userBean.getPdfCompanyZip1()) %>" name="pdfCompanyZip1" tabindex="39"/>
+						ã€’ <input type="text" class="textbox-two" maxlength="3" size="4" value="<%= LACSUserHTMLUtil.encode(userBean.getPdfCompanyZip1()) %>" name="pdfCompanyZip1" tabindex="39"/>
 						<span class="tilde">-</span> 
 						<input type="text" class="textbox-three" maxlength="4" size="5" value="<%= LACSUserHTMLUtil.encode(userBean.getPdfCompanyZip2()) %>" name="pdfCompanyZip2" tabindex="40"/>
 					</div>
@@ -469,116 +469,116 @@
 					</div>
 				</div>
 				<div class="new-disclosure-recipient-section">
-					“d˜b”Ô†F
+					é›»è©±ç•ªå·ï¼š
 					<input type="text" class="textbox-seven" maxlength="13" size="17" value="<%= LACSUserHTMLUtil.encode(userBean.getPdfCompanyTel()) %>" name="pdfCompanyTel" tabindex="38"/>
 				</div>
 			</div>
-			<div class="new-disclosure-recipient-info-title">Žg—p‰Â”\‹@”\</div>
+			<div class="new-disclosure-recipient-info-title">ä½¿ç”¨å¯èƒ½æ©Ÿèƒ½</div>
 			<div class="new-disclosure-recipient-info-block">
 				<div class="addable-screen">
-					<p>‰æ–Ê</p>
+					<p>ç”»é¢</p>
 					<div class="section">
-						<label><%= LACSUserHTMLUtil.outHTMLDisplayControl(userBean.getDispControl(),"G0000001",43,"Žx•¥„ˆÚ•\") %></label>
+						<label><%= LACSUserHTMLUtil.outHTMLDisplayControl(userBean.getDispControl(),"G0000001",43,"æ”¯æ‰•æŽ¨ç§»è¡¨") %></label>
 					</div>
 					<div class="section">
-						<label><%= LACSUserHTMLUtil.outHTMLDisplayControl(userBean.getDispControl(),"G0000002",44,"Žd–óÆ‰ï") %></label>
+						<label><%= LACSUserHTMLUtil.outHTMLDisplayControl(userBean.getDispControl(),"G0000002",44,"ä»•è¨³ç…§ä¼š") %></label>
 					</div>
 					<div class="section">
-						<label><%= LACSUserHTMLUtil.outHTMLDisplayControl(userBean.getDispControl(),"G0000003",45,"Œ_–ñŒŸõ") %></label>
+						<label><%= LACSUserHTMLUtil.outHTMLDisplayControl(userBean.getDispControl(),"G0000003",45,"å¥‘ç´„æ¤œç´¢") %></label>
 					</div>
 					<div class="section">
-						<label><%= LACSUserHTMLUtil.outHTMLDisplayControl(userBean.getDispControl(),"G0000004",46,"•¨ŒŒŸõ") %></label>
+						<label><%= LACSUserHTMLUtil.outHTMLDisplayControl(userBean.getDispControl(),"G0000004",46,"ç‰©ä»¶æ¤œç´¢") %></label>
 					</div>
 					<div class="section">
-						<label><%= LACSUserHTMLUtil.outHTMLDisplayControl(userBean.getDispControl(),"G0000005",47,"’‹L’ •[o—Í") %></label>
+						<label><%= LACSUserHTMLUtil.outHTMLDisplayControl(userBean.getDispControl(),"G0000005",47,"æ³¨è¨˜å¸³ç¥¨å‡ºåŠ›") %></label>
 					</div>
 					<div class="section">
-						<label><%= LACSUserHTMLUtil.outHTMLDisplayControl(userBean.getDispControl(),"G0000006",48,"ŒŽŽŸ’ •[o—Í") %></label>
+						<label><%= LACSUserHTMLUtil.outHTMLDisplayControl(userBean.getDispControl(),"G0000006",48,"æœˆæ¬¡å¸³ç¥¨å‡ºåŠ›") %></label>
 					</div>
 					<div class="section">
-						<label><%= LACSUserHTMLUtil.outHTMLDisplayControl(userBean.getDispControl(),"G0000007",49,"Žó•¥‡Œv•\") %></label>
+						<label><%= LACSUserHTMLUtil.outHTMLDisplayControl(userBean.getDispControl(),"G0000007",49,"å—æ‰•åˆè¨ˆè¡¨") %></label>
 					</div>
 					<div class="section">
-						<label><%= LACSUserHTMLUtil.outHTMLDisplayControl(userBean.getDispControl(),"G0000008",50,"Œ_–ñÚ×Æ‰ï") %></label>
+						<label><%= LACSUserHTMLUtil.outHTMLDisplayControl(userBean.getDispControl(),"G0000008",50,"å¥‘ç´„è©³ç´°ç…§ä¼š") %></label>
 					</div>
 				</div>
 				<div class="csv-leader">
-					<p>’ •[^‚b‚r‚u</p>
+					<p>å¸³ç¥¨ï¼ï¼£ï¼³ï¼¶</p>
 					<div class="input-group-row">
 						<div class="csv-leader-input-group">
-							’‹L’ •[o—Í
+							æ³¨è¨˜å¸³ç¥¨å‡ºåŠ›
 							<div class="section">
-								<label><%= LACSUserHTMLUtil.outHTMLDisplayControl(userBean.getDispControl(),"P0000005",51,"ƒŠ[ƒX—¿Žx•¥ƒXƒPƒWƒ…[ƒ‹•\i•¨Œ’PˆÊj") %></label>
+								<label><%= LACSUserHTMLUtil.outHTMLDisplayControl(userBean.getDispControl(),"P0000005",51,"ãƒªãƒ¼ã‚¹æ–™æ”¯æ‰•ã‚¹ã‚±ã‚¸ãƒ¥ãƒ¼ãƒ«è¡¨ï¼ˆç‰©ä»¶å˜ä½ï¼‰") %></label>
 							</div>
 							<div class="section">
-								<label><%= LACSUserHTMLUtil.outHTMLDisplayControl(userBean.getDispControl(),"P0000004",52,"’‹L‘—Þì¬Šî€‘") %></label>
+								<label><%= LACSUserHTMLUtil.outHTMLDisplayControl(userBean.getDispControl(),"P0000004",52,"æ³¨è¨˜æ›¸é¡žä½œæˆåŸºæº–æ›¸") %></label>
 							</div>
 							<div class="section">
-								<label><%= LACSUserHTMLUtil.outHTMLDisplayControl(userBean.getDispControl(),"P0000001",53,"ƒŠ[ƒX‰ïŒv’‹L‡Œv•\") %></label>
+								<label><%= LACSUserHTMLUtil.outHTMLDisplayControl(userBean.getDispControl(),"P0000001",53,"ãƒªãƒ¼ã‚¹ä¼šè¨ˆæ³¨è¨˜åˆè¨ˆè¡¨") %></label>
 							</div>
 							<div class="section">
-								<label><%= LACSUserHTMLUtil.outHTMLDisplayControl(userBean.getDispControl(),"P0000007",54,"–¢Œo‰ßƒŠ[ƒX—¿Šú––Žc‚•Ê•\") %></label>
+								<label><%= LACSUserHTMLUtil.outHTMLDisplayControl(userBean.getDispControl(),"P0000007",54,"æœªçµŒéŽãƒªãƒ¼ã‚¹æ–™æœŸæœ«æ®‹é«˜åˆ¥è¡¨") %></label>
 							</div>
 							<div class="section">
-								<label><%= LACSUserHTMLUtil.outHTMLDisplayControl(userBean.getDispControl(),"P0000002",54,"ƒŠ[ƒX‰ïŒvŽ‘—¿iŒ¸‰¿ž‹p”ïj") %></label>
+								<label><%= LACSUserHTMLUtil.outHTMLDisplayControl(userBean.getDispControl(),"P0000002",54,"ãƒªãƒ¼ã‚¹ä¼šè¨ˆè³‡æ–™ï¼ˆæ¸›ä¾¡å„Ÿå´è²»ï¼‰") %></label>
 							</div>
 							<div class="section">
-								<label><%= LACSUserHTMLUtil.outHTMLDisplayControl(userBean.getDispControl(),"P0000003",55,"ƒŠ[ƒX‰ïŒvŽ‘—¿iŽx•¥ƒŠ[ƒX—¿“™j") %></label>
+								<label><%= LACSUserHTMLUtil.outHTMLDisplayControl(userBean.getDispControl(),"P0000003",55,"ãƒªãƒ¼ã‚¹ä¼šè¨ˆè³‡æ–™ï¼ˆæ”¯æ‰•ãƒªãƒ¼ã‚¹æ–™ç­‰ï¼‰") %></label>
 							</div>
 							<div class="section">
-								<label><%= LACSUserHTMLUtil.outHTMLDisplayControl(userBean.getDispControl(),"P0000032",56,"Šú“ú•Ê—\’è•\(‡Œv•\)") %></label>
+								<label><%= LACSUserHTMLUtil.outHTMLDisplayControl(userBean.getDispControl(),"P0000032",56,"æœŸæ—¥åˆ¥äºˆå®šè¡¨(åˆè¨ˆè¡¨)") %></label>
 							</div>
 							<div class="section">
-								<label><%= LACSUserHTMLUtil.outHTMLDisplayControl(userBean.getDispControl(),"P0000033",56,"Šú“ú•Ê—\’è•\(Â–±)") %></label>
+								<label><%= LACSUserHTMLUtil.outHTMLDisplayControl(userBean.getDispControl(),"P0000033",56,"æœŸæ—¥åˆ¥äºˆå®šè¡¨(å‚µå‹™)") %></label>
 							</div>
 							<div class="section">
-								<label><%= LACSUserHTMLUtil.outHTMLDisplayControl(userBean.getDispControl(),"P0000034",56,"Šú“ú•Ê—\’è•\(Ž‘ŽY)") %></label>
+								<label><%= LACSUserHTMLUtil.outHTMLDisplayControl(userBean.getDispControl(),"P0000034",56,"æœŸæ—¥åˆ¥äºˆå®šè¡¨(è³‡ç”£)") %></label>
 							</div>
 							<div class="section">
-								<label><%= LACSUserHTMLUtil.outHTMLDisplayControl(userBean.getDispControl(),"P0000006",56,"’‹LŒ¹òî•ñ") %></label>
-							</div>
-						</div>
-						<div class="csv-leader-input-group">
-							ŒŽŽŸ’ •[o—Í
-							<div class="section">
-								<label><%= LACSUserHTMLUtil.outHTMLDisplayControl(userBean.getDispControl(),"P0000011",57,"ƒŠ[ƒX‰ïŒvŠî€–¾×‘") %></label>
-							</div>
-							<div class="section">
-								<label><%= LACSUserHTMLUtil.outHTMLDisplayControl(userBean.getDispControl(),"P0000012",58,"œ‹pŽ‘ŽYˆê——") %></label>
-							</div>
-							<div class="section">
-								<label><%= LACSUserHTMLUtil.outHTMLDisplayControl(userBean.getDispControl(),"P0000013",59,"Žd–ó‡Œv•\") %></label>
-							</div>
-							<div class="section">
-								<label><%= LACSUserHTMLUtil.outHTMLDisplayControl(userBean.getDispControl(),"P0000016",60,"ŒÅ’èŽ‘ŽY‘ä’ iƒŠ[ƒXŽ‘ŽYj") %></label>
-							</div>
-							<div class="section">
-								<label><%= LACSUserHTMLUtil.outHTMLDisplayControl(userBean.getDispControl(),"P0000015",61,"Á”ïÅ–¾×•\") %></label>
-							</div>
-							<div class="section">
-								<label><%= LACSUserHTMLUtil.outHTMLDisplayControl(userBean.getDispControl(),"P0000014",62,"Žd–óŒ¹òî•ñ") %></label>
+								<label><%= LACSUserHTMLUtil.outHTMLDisplayControl(userBean.getDispControl(),"P0000006",56,"æ³¨è¨˜æºæ³‰æƒ…å ±") %></label>
 							</div>
 						</div>
 						<div class="csv-leader-input-group">
+							æœˆæ¬¡å¸³ç¥¨å‡ºåŠ›
 							<div class="section">
-								Žó•¥‡Œv•\
+								<label><%= LACSUserHTMLUtil.outHTMLDisplayControl(userBean.getDispControl(),"P0000011",57,"ãƒªãƒ¼ã‚¹ä¼šè¨ˆåŸºæº–æ˜Žç´°æ›¸") %></label>
+							</div>
+							<div class="section">
+								<label><%= LACSUserHTMLUtil.outHTMLDisplayControl(userBean.getDispControl(),"P0000012",58,"é™¤å´è³‡ç”£ä¸€è¦§") %></label>
+							</div>
+							<div class="section">
+								<label><%= LACSUserHTMLUtil.outHTMLDisplayControl(userBean.getDispControl(),"P0000013",59,"ä»•è¨³åˆè¨ˆè¡¨") %></label>
+							</div>
+							<div class="section">
+								<label><%= LACSUserHTMLUtil.outHTMLDisplayControl(userBean.getDispControl(),"P0000016",60,"å›ºå®šè³‡ç”£å°å¸³ï¼ˆãƒªãƒ¼ã‚¹è³‡ç”£ï¼‰") %></label>
+							</div>
+							<div class="section">
+								<label><%= LACSUserHTMLUtil.outHTMLDisplayControl(userBean.getDispControl(),"P0000015",61,"æ¶ˆè²»ç¨Žæ˜Žç´°è¡¨") %></label>
+							</div>
+							<div class="section">
+								<label><%= LACSUserHTMLUtil.outHTMLDisplayControl(userBean.getDispControl(),"P0000014",62,"ä»•è¨³æºæ³‰æƒ…å ±") %></label>
+							</div>
+						</div>
+						<div class="csv-leader-input-group">
+							<div class="section">
+								å—æ‰•åˆè¨ˆè¡¨
 								<div class="section">
-									<label><%= LACSUserHTMLUtil.outHTMLDisplayControl(userBean.getDispControl(),"P0000021",63,"Žó•¥‡Œv•\") %></label>
+									<label><%= LACSUserHTMLUtil.outHTMLDisplayControl(userBean.getDispControl(),"P0000021",63,"å—æ‰•åˆè¨ˆè¡¨") %></label>
 								</div>
 								<div class="section">
-									<label><%= LACSUserHTMLUtil.outHTMLDisplayControl(userBean.getDispControl(),"P0000022",64,"ƒŠ[ƒXŽ‘ŽYŽó•¥–¾×•\") %></label>
+									<label><%= LACSUserHTMLUtil.outHTMLDisplayControl(userBean.getDispControl(),"P0000022",64,"ãƒªãƒ¼ã‚¹è³‡ç”£å—æ‰•æ˜Žç´°è¡¨") %></label>
 								</div>
 								<div class="section">
-									<label><%= LACSUserHTMLUtil.outHTMLDisplayControl(userBean.getDispControl(),"P0000023",65,"ƒŠ[ƒX—¿Žó•¥–¾×•\") %></label>
+									<label><%= LACSUserHTMLUtil.outHTMLDisplayControl(userBean.getDispControl(),"P0000023",65,"ãƒªãƒ¼ã‚¹æ–™å—æ‰•æ˜Žç´°è¡¨") %></label>
 								</div>
 								<div class="section">
-									<label><%= LACSUserHTMLUtil.outHTMLDisplayControl(userBean.getDispControl(),"P0000024",66,"”ï—pŽó•¥–¾×•\") %></label>
+									<label><%= LACSUserHTMLUtil.outHTMLDisplayControl(userBean.getDispControl(),"P0000024",66,"è²»ç”¨å—æ‰•æ˜Žç´°è¡¨") %></label>
 								</div>
 							</div>
 							<div class="section">
-								Œ_–ñÚ×Æ‰ï
+								å¥‘ç´„è©³ç´°ç…§ä¼š
 								<div class="section">
-									<label><%= LACSUserHTMLUtil.outHTMLDisplayControl(userBean.getDispControl(),"P0000031",67,"Œ_–ñÚ×î•ñ") %></label>
+									<label><%= LACSUserHTMLUtil.outHTMLDisplayControl(userBean.getDispControl(),"P0000031",67,"å¥‘ç´„è©³ç´°æƒ…å ±") %></label>
 								</div>
 							</div>
 						</div>
@@ -586,8 +586,8 @@
 				</div>
 			</div>
 			<p class="create-button">
-				<input type="button" class="button" value=" “o  ˜^ " onclick="checkKnuAmtTutiUmFlg();kakuninRegist('regist.user')" name="regist" tabindex="98"/>
-				<input type="button" class="button" value=" –ß@‚é " onclick="post('back.user')" name="return" tabindex="99"/>
+				<input type="button" class="button" value=" ç™»  éŒ² " onclick="checkKnuAmtTutiUmFlg();kakuninRegist('regist.user')" name="regist" tabindex="98"/>
+				<input type="button" class="button" value=" æˆ»ã€€ã‚‹ " onclick="post('back.user')" name="return" tabindex="99"/>
 			</p>		
 		</div>
 		<div class="footer">
